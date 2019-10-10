@@ -1,98 +1,136 @@
-
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
 
-<title>零钱 | Songjave</title>
-<meta name="description" content="Songjave的个人小站">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://songjave.github.io//favicon.ico?v=1570715616656">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    零钱 | Songjave
+</title>
+<link rel="shortcut icon" href="https://songjave.github.io//favicon.ico?v=1570715669998">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://songjave.github.io//styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://songjave.github.io//media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+</head>
 
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://songjave.github.io/">
-        <img class="avatar" src="https://songjave.github.io//images/avatar.png?v=1570715616656" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://songjave.github.io/">
-        <h1 class="site-title">Songjave</h1>
-      </a>
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://songjave.github.io/">
+                <img class="avatar" src="https://songjave.github.io//images/avatar.png?v=1570715669998" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    Songjave
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
 </div>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        零钱</b>
     </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 零钱
-          </h2> 
-        </div>
-
+    
         
-<section class="post-item">
-    <div class="content">
-      <a href="https://songjave.github.io//post/howto-make-more-money">
-        <h2 class="post-title">程序员如何优雅的挣零花钱？</h2>
-      </a>
-      <div class="post-abstract">
-        <p>[2018/04/20更新版]</p>
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://songjave.github.io//post/howto-make-more-money">
+                        程序员如何优雅的挣零花钱？
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-10-10</time>
+                    
+                        <a href="https://songjave.github.io//tag/MfSz1XIfP" class="post-tag i-tag
+                            i-tag-success">
+            #零钱
+        </a>
+                        
+                        <a href="https://songjave.github.io//tag/mgFE492nFC" class="post-tag i-tag
+                            i-tag-warning">
+            #程序猿
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://songjave.github.io//post/howto-make-more-money" class="post-feature-image" style="background-image:url(https://ws1.sinaimg.cn/large/40dfde6fgy1fqitltwcraj21350rd1f7.jpg) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>[2018/04/20更新版]</p>
 <p>虽然程序员有女朋友的不多（误），但是开销往往都不小。<br>
 VPS、域名、Mac上那一堆的收费软件、还有Apple每年更新的那些设备，经常都是肾不够用的节奏。</p>
 <p>幸好作为程序员，我们有更多挣钱的姿势。</p>
@@ -100,81 +138,90 @@ VPS、域名、Mac上那一堆的收费软件、还有Apple每年更新的那些
 对，但是也不太对。做私单的确是一个简单直接方式，但在我看来，私单的投入产出比很差，并不是最优的。<br>
 但既然提到了，就先说说吧。</p>
 
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-10-10</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://songjave.github.io//post/howto-make-more-money">Read More ~</a>
+                            </div>
+                </div>
+            </article>
             
-              <a href="https://songjave.github.io//tag/MfSz1XIfP">
-                零钱
+                <!-- 翻页 -->
                 
-                  ，
-                
-              </a>
-            
-              <a href="https://songjave.github.io//tag/mgFE492nFC">
-                程序猿
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://songjave.github.io//post/howto-make-more-money">
-        <div class="feature-container" style="background-image: url('https://ws1.sinaimg.cn/large/40dfde6fgy1fqitltwcraj21350rd1f7.jpg')">
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://songjave.github.io//images/avatar.png?v=1570715669998)">
         </div>
-      </a>
-    
-  </section>
+        <h1 class="id_card-title">
+            Songjave
+        </h1>
+        <h2 class="id_card-description">
+            Songjave的个人小站
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/songjave" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                        <a href="https://twitter.com/songting1028" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-twitter"></i></a>
+                        
+                            <!-- weibo -->
+                            
+                                <a href="https://weibo.com/songyan8687" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-weibo"></i></a>
+                                
+                                    <!-- facebook -->
+                                    
+                                        <a href="https://www.facebook.com/songting1986" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-facebook"></i></a>
+                                        
 
-
-<div class="pagination-container">
-  
-  
-</div>
-
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">Songjave的个人小站</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/songjave" target="_blank">Song</a> | <a class="rss" href="https://songjave.github.io//atom.xml" target="_blank">RSS</a>
-</div>
-
-
+        </div>
     </div>
-    <script type="application/javascript">
+    
 
-hljs.initHighlightingOnLoad()
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            这是一个很懒的程序猿
+        </div>
+    </div>
+    
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+                </div>
+            </div>
 
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/songjave" target="_blank">Song</a> | 
+  <a class="rss" href="https://songjave.github.io//atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
 </script>
 
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
 
-
-
-  </body>
 </html>

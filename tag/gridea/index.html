@@ -1,168 +1,217 @@
-
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
 
-<title>Gridea | Songjave</title>
-<meta name="description" content="Songjave的个人小站">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://songjave.github.io//favicon.ico?v=1570715616656">
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Gridea | Songjave
+</title>
+<link rel="shortcut icon" href="https://songjave.github.io//favicon.ico?v=1570715669998">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://songjave.github.io//styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://songjave.github.io//media/js/jquery.sticky-sidebar.min.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+</head>
 
-  </head>
-  <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://songjave.github.io/">
-        <img class="avatar" src="https://songjave.github.io//images/avatar.png?v=1570715616656" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://songjave.github.io/">
-        <h1 class="site-title">Songjave</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> Gridea
-          </h2> 
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://songjave.github.io/">
+                <img class="avatar" src="https://songjave.github.io//images/avatar.png?v=1570715669998" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    Songjave
+                </h1>
+            </div>
         </div>
-
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://songjave.github.io//post/hello-gridea">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2018-12-12</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://songjave.github.io//tag/gridea">
-                Gridea
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
                 
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-      <a href="https://songjave.github.io//post/hello-gridea">
-        <div class="feature-container" style="background-image: url('https://songjave.github.io//post-images/hello-gridea.png')">
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
         </div>
-      </a>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
-</div>
-
-
-      </div>
-
-      <div class="site-footer">
-  <div class="slogan">Songjave的个人小站</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/songjave" target="_blank">Song</a> | <a class="rss" href="https://songjave.github.io//atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
+</div>
 
-hljs.initHighlightingOnLoad()
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
 
+        });
+    });
 </script>
 
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        Gridea</b>
+    </div>
+    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://songjave.github.io//post/hello-gridea">
+                        Hello Gridea
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2018-12-12</time>
+                    
+                        <a href="https://songjave.github.io//tag/gridea" class="post-tag i-tag
+                            i-tag-info">
+            #Gridea
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://songjave.github.io//post/hello-gridea" class="post-feature-image" style="background-image:url(https://songjave.github.io//post-images/hello-gridea.png) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://songjave.github.io//post/hello-gridea">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://songjave.github.io//images/avatar.png?v=1570715669998)">
+        </div>
+        <h1 class="id_card-title">
+            Songjave
+        </h1>
+        <h2 class="id_card-description">
+            Songjave的个人小站
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/songjave" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                        <a href="https://twitter.com/songting1028" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-twitter"></i></a>
+                        
+                            <!-- weibo -->
+                            
+                                <a href="https://weibo.com/songyan8687" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-weibo"></i></a>
+                                
+                                    <!-- facebook -->
+                                    
+                                        <a href="https://www.facebook.com/songting1986" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-facebook"></i></a>
+                                        
+
+        </div>
+    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            这是一个很懒的程序猿
+        </div>
+    </div>
+    
+
+                </div>
+            </div>
 
 
 
-  </body>
+            <div class="site-footer">
+  Powered by <a href="https://github.com/songjave" target="_blank">Song</a> | 
+  <a class="rss" href="https://songjave.github.io//atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
+
 </html>
