@@ -224,7 +224,7 @@ body {
   box-sizing: border-box;
   font-weight: 300;
   font-size: 14px;
-  font-family: "Noto Sans CJK SC", "PingFang SC", "Helvetica Neue", "Myriad Pro", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans CJK SC", "PingFang SC", "Helvetica Neue", "Microsoft YaHei", Helvetica, Arial, sans-serif;
 }
 a {
   color: #515a6e;
@@ -454,6 +454,7 @@ pre {
 body {
   display: flex;
   background-color: #fafafa;
+  line-height: 1.5;
 }
 .main {
   display: flex;
@@ -785,7 +786,6 @@ body {
 }
 .post-detail .post .post-content {
   overflow: hidden;
-  line-height: 1.5;
 }
 .post-detail .post .post-content a {
   transition: all 0.3s;

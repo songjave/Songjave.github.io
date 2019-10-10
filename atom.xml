@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://songjave.github.io/</id>
     <title>Songjave</title>
-    <updated>2019-10-10T05:23:08.398Z</updated>
+    <updated>2019-10-10T05:39:46.699Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://songjave.github.io/"/>
     <link rel="self" href="https://songjave.github.io//atom.xml"/>
@@ -16,6 +16,22 @@
         <link href="https://songjave.github.io//post/howto-make-more-money">
         </link>
         <updated>2019-10-10T04:58:30.000Z</updated>
+        <summary type="html"><![CDATA[<p>[2018/04/20更新版]</p>
+<p>虽然程序员有女朋友的不多（误），但是开销往往都不小。<br>
+VPS、域名、Mac上那一堆的收费软件、还有Apple每年更新的那些设备，经常都是肾不够用的节奏。</p>
+<p>幸好作为程序员，我们有更多挣钱的姿势。</p>
+<p>有同学该嚷了：不就是做私单嘛。<br>
+对，但是也不太对。做私单的确是一个简单直接方式，但在我看来，私单的投入产出比很差，并不是最优的。<br>
+但既然提到了，就先说说吧。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>[2018/04/20更新版]</p>
+<p>虽然程序员有女朋友的不多（误），但是开销往往都不小。<br>
+VPS、域名、Mac上那一堆的收费软件、还有Apple每年更新的那些设备，经常都是肾不够用的节奏。</p>
+<p>幸好作为程序员，我们有更多挣钱的姿势。</p>
+<p>有同学该嚷了：不就是做私单嘛。<br>
+对，但是也不太对。做私单的确是一个简单直接方式，但在我看来，私单的投入产出比很差，并不是最优的。<br>
+但既然提到了，就先说说吧。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
