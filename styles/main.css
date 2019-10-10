@@ -228,7 +228,7 @@ body {
 }
 a {
   color: #515a6e;
-  font-weight: 400;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -789,6 +789,8 @@ body {
 }
 .post-detail .post .post-content a {
   transition: all 0.3s;
+  font-weight: 400;
+  text-decoration: underline ;
 }
 .post-detail .post .post-content img {
   display: block;
