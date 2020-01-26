@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://songjave.github.io/</id>
     <title>Songjave</title>
-    <updated>2019-10-10T13:56:58.375Z</updated>
+    <updated>2020-01-26T17:57:49.686Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://songjave.github.io/"/>
-    <link rel="self" href="https://songjave.github.io//atom.xml"/>
+    <link rel="self" href="https://songjave.github.io/atom.xml"/>
     <subtitle>Songjave的个人小站</subtitle>
-    <logo>https://songjave.github.io//images/avatar.png</logo>
-    <icon>https://songjave.github.io//favicon.ico</icon>
-    <rights>All rights reserved 2019, Songjave</rights>
+    <logo>https://songjave.github.io/images/avatar.png</logo>
+    <icon>https://songjave.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Songjave</rights>
     <entry>
         <title type="html"><![CDATA[程序员如何优雅的挣零花钱？]]></title>
-        <id>https://songjave.github.io//post/howto-make-more-money</id>
-        <link href="https://songjave.github.io//post/howto-make-more-money">
+        <id>https://songjave.github.io/post/howto-make-more-money</id>
+        <link href="https://songjave.github.io/post/howto-make-more-money">
         </link>
         <updated>2019-10-10T04:58:30.000Z</updated>
         <summary type="html"><![CDATA[<p>[2018/04/20更新版]</p>
@@ -35,8 +35,8 @@ VPS、域名、Mac上那一堆的收费软件、还有Apple每年更新的那些
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://songjave.github.io//post/hello-gridea</id>
-        <link href="https://songjave.github.io//post/hello-gridea">
+        <id>https://songjave.github.io/post/hello-gridea</id>
+        <link href="https://songjave.github.io/post/hello-gridea">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
